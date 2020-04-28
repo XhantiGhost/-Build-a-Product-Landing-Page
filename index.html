@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Product Landing Page</title>
 </head>
@@ -13,75 +14,87 @@
             <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo">
 
         <nav id="nav-bar">
-            <li><a href="" class="nav-link">Features</a></li>
-            <li><a href="" class="nav-link">How It Works</a></li>
-            <li><a href="" class="nav-link">Pricing</a></li>
+            <li><a href="#Features" class="nav-link">Features</a></li>
+            <li><a href="#videos" class="nav-link">How It Works</a></li>
+            <li><a href="#Prices" class="nav-link">Pricing</a></li>
         </nav>
     </div>
 </header>
 
 <div id="main">
-<section>
-<h3>Handcrafted, home-made masterpieces</h3>
+<section id="Features">
+<h3 class="title">Handcrafted, home-made masterpieces</h3><br>
 <form action="" id="form">
-    <input type="email" name="email" id="email" placeholder="Enter your email address">
+    <input type="email" name="email" id="email" placeholder="Enter your email address"><br><br>
     <input type="submit" value="Get Started" id="submit">
 </form>
-
+<div class="icon">
+<i class="fa fa-3x fa-fire"></i>
+</div>
 <h3>Premium Materials</h3>
 <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
 
 <br>
-
+<div class="icon">
+    <i class="fa fa-3x fa-truck"></i>
+    </div>
 <h3>Fast Shipping</h3>
 <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
 
 <br>
-
+<div class="icon">
+    <i class="fa fa-3x fa-battery-full"></i>
+    </div>
 <h3>Quality Assurance</h3>
 <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
 </section>
 
-<section id="video">
+<section id="videos">
 <div>
-    <iframe width="500" height="400"
-src="https://youtu.be/y8Yv4pnO7qc">
-</iframe> 
+    <video id="video" controls>
+        <source  src="https://youtu.be/y8Yv4pnO7qc" type="video/mp4" mute>
+        </video> 
+    <!-- <iframe width="500" height="400"
+src="">
+</iframe>  -->
 </div>
 </section>
 
-<section>
+<section id="Prices">
     <div class="box container">
     <div class="product1" id="value">
         <div class="level">Tenor Trombone</div>
+        <hr>
         <h3>$600</h3>
         <ol>
             <li>Lorem ipsum.</li>
             <li>Lorem ipsum.</li>
             <li>Lorem ipsum dolor.</li>
-            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li><br>
     <button class="btn">Select</button>
         </ol>
     </div>
     <div class="product2" id="value">
         <div class="level">Bass Trombone</div>
+        <hr>
         <h3>$900</h3>
         <ol>
             <li>Lorem ipsum.</li>
             <li>Lorem ipsum.</li>
             <li>Lorem ipsum dolor.</li>
-            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li><br>
     <button class="btn">Select</button>
         </ol>
     </div>
     <div class="product3" id="value">
         <div class="level">Valve Trombone</div>
+        <hr>
         <h3>$1200</h3>
         <ol>
             <li>Plays similar to a Trumpet</li>
             <li>Great for Jazz Bands</li>
             <li>Lorem ipsum dolor.</li>
-            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li><br>
     <button class="btn">Select</button>
         </ol>
 
@@ -98,6 +111,8 @@ src="https://youtu.be/y8Yv4pnO7qc">
    <span>Copyright 2016, Original Trombones</span> 
 </footer>
 </div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </body>
 </html>
